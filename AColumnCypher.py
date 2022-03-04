@@ -18,28 +18,39 @@ In this exercise we will use numpy multidimensional arrays to encode a message a
 """
 1. Import numpy (as np) so that you have access to all numpy methods. Code: import numpy as np
 """
-
+import numpy as np
 
 """
 2. A message is defined below. Use np.array(<list>) to convert message into an array of characters, then print the array (note: you will have to convert message to a LIST of characters first.)
 
 """
 message = "THISMESSAGEISVERYSECRETX"
+message_lst = []
+for i in range(len(message)):
+  message_lst.append(message[i])
 
-
+msg = np.array(message_lst)
 
 """
 3. Use <array>.shape = (<number of rows>, <number of columns>) to create a column cypher with 3 columns. Print the result
 Note: You can calculate how many rows you will need, or the shape function can do that automatically if you make the number of rows -1.
 """
+msg.shape = (3,8)
 
 
 """
 4. Use <var> = np.transpose(<array>) to switch the rows and the columns. Print the new array.
 """
+switch = np.transpose(msg)
+print (switch)
 
 """
 5. When you index the transposed array, you should get a row of the array. For example, <array>[0] should be the first row of characters.
 
 Declare a new variable that will store the encoded message, and set it to an empty string. Loop through the rows of the array. Use ''.join(<array>) to convert the array of characters to a string. Then add that string to the encoded message. Print the final result.
 """
+
+store = ("")
+for i in (0,8):
+  "".join(switch)
+  msg.append(store)

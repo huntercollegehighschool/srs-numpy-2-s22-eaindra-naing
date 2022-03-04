@@ -9,3 +9,4 @@ Below you are given the stock prices (there are only 4 days in this example). Fi
 """
 
 acme = [10, 11.5, 11, 10, 12]
+np.array(acme)
